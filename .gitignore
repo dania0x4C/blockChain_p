@@ -1,4 +1,4 @@
 /node_modules
-/e/figures
-/e/scripts
-/e/src
+/e/**/figures
+/e/**/scripts
+/e/**/src
