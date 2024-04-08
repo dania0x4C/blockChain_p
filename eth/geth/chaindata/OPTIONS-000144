@@ -3,7 +3,7 @@
 
 [Options]
   bytes_per_sync=524288
-  cache_size=16777216
+  cache_size=536870912
   cleaner=delete
   compaction_debt_concurrency=1073741824
   comparer=leveldb.BytewiseComparator
@@ -19,11 +19,12 @@
   lbase_max_bytes=67108864
   max_concurrent_compactions=8
   max_manifest_file_size=134217728
-  max_open_files=16
-  mem_table_size=4194304
+  max_open_files=8192
+  mem_table_size=134217728
   mem_table_stop_writes_threshold=2
   min_deletion_rate=0
   merger=pebble.concatenate
+  point_tombstone_weight=1.000000
   read_compaction_rate=16000
   read_sampling_multiplier=-1
   strict_wal_tail=true
@@ -34,12 +35,10 @@
   wal_bytes_per_sync=0
   max_writer_concurrency=0
   force_writer_parallelism=false
-  secondary_cache_size_bytes=0
 
 [Level "0"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table
@@ -49,7 +48,6 @@
 [Level "1"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table
@@ -59,7 +57,6 @@
 [Level "2"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table
@@ -69,7 +66,6 @@
 [Level "3"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table
@@ -79,7 +75,6 @@
 [Level "4"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table
@@ -89,7 +84,6 @@
 [Level "5"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table
@@ -99,7 +93,6 @@
 [Level "6"]
   block_restart_interval=16
   block_size=4096
-  block_size_threshold=90
   compression=Snappy
   filter_policy=rocksdb.BuiltinBloomFilter
   filter_type=table

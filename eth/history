@@ -1,0 +1,14 @@
+miner.start()
+miner.setEtherbase(eth.accounts[0])
+miner.start()
+eth.accounts
+miner.stop()
+eth.getBalance(eth.accounts[0])
+miner.start()
+eth.getBalance(eth.accounts[0]);
+miner.stop(
+)
+miner.start()
+miner.account[1]
+eth.getBalance(eth.accounts[1]);
+eth.getBalance(eth.accounts[0])

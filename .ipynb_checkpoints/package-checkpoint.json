@@ -1,0 +1,13 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Study blockchain",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.8.25",
+    "web3": "^4.5.0"
+  }
+}
