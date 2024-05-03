@@ -1,7 +1,11 @@
 {
-    "cSpell.words": [
-        "ecdsas",
-        "privtopub",
-        "pubtoaddr"
-    ]
+  "cSpell.words": [
+    "ecdsas",
+    "privtopub",
+    "pubtoaddr",
+    "sealhash",
+    "shello",
+    "xlabel",
+    "ylabel"
+  ]
 }
